@@ -3,7 +3,7 @@ import { Outlet } from "react-router-dom";
 import Footer from "./Footer";
 import Header from "./Header";
 
-const FrontLayout = () => {
+const UserLayout = () => {
   return (
     <Fragment>
       <Header />
@@ -15,4 +15,4 @@ const FrontLayout = () => {
   );
 };
 
-export default FrontLayout;
+export default UserLayout;

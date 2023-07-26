@@ -2,7 +2,7 @@ import { Fragment, useContext } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { AuthContex } from "./context/AuthContex";
 
-import FrontLayout from "./components/layout/FrontLayout";
+import UserLayout from "./components/layout/UserLayout";
 import AdminLayout from "./components/layout/AdminLayout";
 
 import HomeP from "./pages/User/HomeP";
@@ -25,7 +25,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<FrontLayout />}>
+        <Route path="/" element={<UserLayout />}>
           <Route index element={<HomeP />} />
           <Route path="about" element={<Aboutp />} />
           <Route path="login" element={<LoginP />} />
